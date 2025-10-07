@@ -47,7 +47,10 @@ export default function Header() {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 font-semibold shadow"
             >
               {menu}
-              <LinkButton styles="xs:hidden" to="">
+              <LinkButton
+                styles="xs:hidden"
+                to="https://github.com/sagormajomder"
+              >
                 <img
                   className="h-5 object-contain"
                   src={gitLogo}
@@ -73,7 +76,7 @@ export default function Header() {
         </div>
         {/* Navbar End */}
         <div className="navbar-end xs:flex hidden">
-          <LinkButton to="">
+          <LinkButton to="https://github.com/sagormajomder">
             <img
               className="h-5 object-contain"
               src={gitLogo}
