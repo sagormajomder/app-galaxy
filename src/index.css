@@ -1,4 +1,28 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 @plugin "daisyui" {
-  themes: light --default, dark;
+  themes:
+    light --default,
+    dark;
+}
+
+:root {
+  --font-inter: "Inter", sans-serif;
+}
+
+@theme inline {
+  --default-font-family: var(--font-inter), var(--font-sans);
+
+  --breakpoint-xs: 30rem;
+
+  --background-image-gradient-primary: linear-gradient(
+    125deg,
+    #632ee3 5.68%,
+    #9f62f2 88.38%
+  );
+}
+
+@layer components {
+  .active {
+    @apply bg-gradient-primary bg-clip-text text-transparent underline decoration-[#9f62f2] underline-offset-4;
+  }
 }
