@@ -1,6 +1,5 @@
 import {
   Bar,
-  CartesianGrid,
   ComposedChart,
   ResponsiveContainer,
   Tooltip,
@@ -23,26 +22,36 @@ export default function RatingStateChart({ ratings }) {
           <ComposedChart
             layout="vertical"
             data={sortedRatings}
+            barGap={1}
+            barCategoryGap={1}
             margin={{ top: 40, right: 30, left: 0, bottom: 5 }}
           >
-            <CartesianGrid stroke="#f5f5f5" />
             <XAxis
               type="number"
               tick={{ fontSize: "0.75rem" }}
               tickFormatter={(value) => formatLargeNumber(value)}
+              axisLine={false}
+              tickLine={false}
             />
             <YAxis
               dataKey="name"
               type="category"
-              scale="band"
+              width={50}
               tick={{
                 fontSize: "0.9rem",
                 fontWeight: 500,
                 dy: 0,
               }}
+              axisLine={false}
+              tickLine={false}
             />
-            <Tooltip />
-            <Bar dataKey="count" barSize={35} maxBarSize={50} fill="#FF8811" />
+            <Tooltip formatter={(value) => formatLargeNumber(value)} />
+            <Bar
+              dataKey="count"
+              barSize={35}
+              fill="#FF8811"
+              radius={[0, 3, 3, 0]}
+            />
           </ComposedChart>
         </ResponsiveContainer>
       </div>
