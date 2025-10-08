@@ -10,7 +10,7 @@ export default function HomePage() {
     <>
       <Container>
         {/* Hero Section */}
-        <section className="mx-auto flex max-w-4xl flex-col items-center pt-14 text-center">
+        <section className="mx-auto flex max-w-[51.25rem] flex-col items-center pt-14 text-center">
           <h1 className="heading-1">
             We Build <br />
             <span className="bg-gradient-primary bg-clip-text text-transparent">
@@ -21,10 +21,10 @@ export default function HomePage() {
           </h1>
           <p className="mb-10">
             At APPGALAXY, we craft innovative apps designed to make everyday
-            life simpler, smarter, and more exciting. <br /> Our goal is to turn
-            your ideas into digital experiences that truly make an impact.
+            life simpler, smarter, and more exciting. Our goal is to turn your
+            ideas into digital experiences that truly make an impact.
           </p>
-          <div className="mb-10 flex flex-col gap-4 transition duration-300 sm:flex-row">
+          <div className="xs:flex-row xs:gap-4 mb-10 flex flex-col gap-2 transition duration-300">
             <LinkButton
               styles="border border-gray-300 hover:bg-gray-200 transition duration-300"
               target="_blank"
