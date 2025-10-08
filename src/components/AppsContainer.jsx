@@ -3,10 +3,22 @@ import downloadIcon from "../assets/icon-downloads.png";
 import ratingsIcon from "../assets/icon-ratings.png";
 import { formatLargeNumber } from "../utils/utils";
 
-export default function AppsContainer({ data }) {
+export default function AppsContainer({
+  data,
+  search = "",
+  onTotalData = () => {},
+}) {
+  const fileterData = data.filter((app) =>
+    app.title
+      .toLowerCase()
+      .includes(search.replace(/\s+/g, " ").trim().toLowerCase()),
+  );
+
+  onTotalData(fileterData.length);
+
   return (
     <div className="grid grid-cols-1 gap-3 min-[38.125rem]:grid-cols-[repeat(auto-fit,minmax(17.5rem,1fr))]">
-      {data.map((app) => (
+      {fileterData.map((app) => (
         <AppCard key={app.id} app={app} />
       ))}
     </div>

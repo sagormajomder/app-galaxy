@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useLoaderData } from "react-router";
 import AppsContainer from "../components/AppsContainer";
 import AppsHeading from "../components/AppsHeading";
@@ -6,6 +7,9 @@ import SectionTitle from "./../components/SectionTitle";
 
 export default function AppsPage() {
   const data = useLoaderData();
+  const [search, setSearch] = useState("");
+  const [totalData, setTotalData] = useState(data.length);
+
   return (
     <section className="py-14">
       <Container style="space-y-10">
@@ -14,9 +18,13 @@ export default function AppsPage() {
           desc="Explore All Apps on the Market developed by us. We code for Millions"
         />
         {/* Search and Title */}
-        <AppsHeading totalApp={data.length} />
+        <AppsHeading
+          totalApp={totalData}
+          search={search}
+          onSearch={setSearch}
+        />
         {/* Apps Container */}
-        <AppsContainer data={data} />
+        <AppsContainer data={data} search={search} onTotalData={setTotalData} />
       </Container>
     </section>
   );
