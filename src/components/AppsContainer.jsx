@@ -1,16 +1,19 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router";
 import downloadIcon from "../assets/icon-downloads.png";
 import ratingsIcon from "../assets/icon-ratings.png";
 import { formatLargeNumber } from "../utils/utils";
 import LinkButton from "./LinkButton";
+import Loader from "./Loader";
 
 export default function AppsContainer({
   data,
   search = "",
   onTotalData = () => {},
 }) {
-  const fileterData = data.filter((app) =>
+  const [isLoading, setIsLoading] = useState(true);
+
+  let filterData = data.filter((app) =>
     app.title
       .toLowerCase()
       .includes(search.replace(/\s+/g, " ").trim().toLowerCase()),
@@ -18,12 +21,31 @@ export default function AppsContainer({
 
   useEffect(
     function () {
-      onTotalData(fileterData.length);
+      setIsLoading(true);
+      setTimeout(() => {
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+        filterData = data.filter((app) =>
+          app.title
+            .toLowerCase()
+            .includes(search.replace(/\s+/g, " ").trim().toLowerCase()),
+        );
+        setIsLoading(false);
+      }, 800);
     },
-    [fileterData.length, onTotalData],
+    [data, search],
   );
 
-  if (fileterData.length === 0) {
+  useEffect(
+    function () {
+      onTotalData(filterData.length);
+    },
+    [filterData.length, onTotalData],
+  );
+
+  if (isLoading) {
+    return <Loader />;
+  }
+  if (filterData.length === 0) {
     return (
       <div className="flex flex-col items-center justify-center gap-4">
         <p className="text-heading text-4xl font-bold">No Apps Found</p>
@@ -39,7 +61,7 @@ export default function AppsContainer({
 
   return (
     <div className="xs:grid-cols-2 grid grid-cols-1 gap-3 md:grid-cols-3 lg:grid-cols-4">
-      {fileterData.map((app) => (
+      {filterData.map((app) => (
         <AppCard key={app.id} app={app} />
       ))}
     </div>
