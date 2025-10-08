@@ -1,14 +1,8 @@
-import { useState } from "react";
 import { useLoaderData, useParams } from "react-router";
-import { toast } from "react-toastify";
 
 import AppOverview from "../components/AppDetailsPage/AppOverview";
+import RatingStateChart from "../components/AppDetailsPage/RatingStateChart";
 import Container from "../components/Container";
-import {
-  formatLargeNumber,
-  localGetInstalledApp,
-  localSetInsalledApp,
-} from "../utils/utils";
 
 // {
 //     "image": "https://i.ibb.co.com/nNmPx1ZV/20240829053151-Gmail.jpg",
@@ -74,9 +68,7 @@ export default function AppDetailsPage() {
         size={size}
       />
       {/* Reviews Chart Section */}
-      <section className="pb-10">
-        <h4 className="heading-4">Ratings</h4>
-      </section>
+      <RatingStateChart ratings={ratings} />
     </Container>
   );
 }
