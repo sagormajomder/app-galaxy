@@ -1,9 +1,15 @@
+import { useState } from "react";
 import { useLoaderData, useParams } from "react-router";
+import { toast } from "react-toastify";
 import downloadIcon from "../assets/icon-downloads.png";
 import ratingIcon from "../assets/icon-ratings.png";
 import reviewIcon from "../assets/icon-review.png";
 import Container from "../components/Container";
-import { formatLargeNumber } from "../utils/utils";
+import {
+  formatLargeNumber,
+  localGetInstalledApp,
+  localSetInsalledApp,
+} from "../utils/utils";
 
 // {
 //     "image": "https://i.ibb.co.com/nNmPx1ZV/20240829053151-Gmail.jpg",
@@ -46,6 +52,18 @@ export default function AppDetailsPage() {
   const app = data.find((app) => app.id === +id);
   const { image, title, companyName, downloads, ratingAvg, reviews, size } =
     app;
+
+  const [isInstalled, setIsInstalled] = useState(() => {
+    const allInstalledApp = localGetInstalledApp();
+    return allInstalledApp.some((item) => item === +id);
+  });
+
+  function handleInstall() {
+    setIsInstalled(true);
+    toast.success(`Successfully installed!`);
+    localSetInsalledApp(+id);
+  }
+
   return (
     <Container style="space-y-10 py-6">
       {/* App Overview Section */}
@@ -92,8 +110,13 @@ export default function AppDetailsPage() {
               </p>
             </div>
           </div>
-          <button className="btn bg-[#00D390] text-white">
-            Install Now ({size} MB)
+          {/* Install Button */}
+          <button
+            disabled={isInstalled}
+            onClick={handleInstall}
+            className={`btn bg-[#00D390] ${isInstalled ? "text-gray-400" : "text-white"}`}
+          >
+            {isInstalled ? "Installed" : `Install Now (${size} MB)`}
           </button>
         </div>
       </section>
