@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router";
 import RootLayout from "../layouts/RootLayout";
+import AppDetailsPage from "../pages/AppDetailsPage";
 import AppsPage from "../pages/AppsPage";
 import HomePage from "../pages/HomePage";
 import InstallationPage from "../pages/InstallationPage";
@@ -21,6 +22,11 @@ const router = createBrowserRouter([
       {
         path: "installation",
         Component: InstallationPage,
+      },
+      {
+        path: "appDetails/:id",
+        Component: AppDetailsPage,
+        loader: async () => fetch("../appData.json"),
       },
     ],
   },
