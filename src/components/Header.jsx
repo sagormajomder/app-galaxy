@@ -19,7 +19,7 @@ export default function Header() {
   );
 
   return (
-    <header className="bg-base-100 shadow-sm">
+    <header className="border-b border-b-[#E9E9E9] bg-white">
       <nav className="navbar mx-auto max-w-7xl px-5">
         {/* Navbar Start */}
         <div className="navbar-start xs:basis-auto basis-full">
@@ -48,8 +48,9 @@ export default function Header() {
             >
               {menu}
               <LinkButton
-                styles="xs:hidden"
+                styles="xs:hidden bg-gradient-primary"
                 to="https://github.com/sagormajomder"
+                target="_blank"
               >
                 <img
                   className="h-5 object-contain"
@@ -76,7 +77,11 @@ export default function Header() {
         </div>
         {/* Navbar End */}
         <div className="navbar-end xs:flex hidden">
-          <LinkButton to="https://github.com/sagormajomder">
+          <LinkButton
+            styles="bg-gradient-primary"
+            to="https://github.com/sagormajomder"
+            target="_blank"
+          >
             <img
               className="h-5 object-contain"
               src={gitLogo}

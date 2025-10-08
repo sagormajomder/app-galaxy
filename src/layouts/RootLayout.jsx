@@ -4,7 +4,7 @@ import Header from "../components/Header";
 
 export default function RootLayout() {
   return (
-    <div className="grid min-h-dvh grid-rows-[auto_1fr_auto]">
+    <div className="text-body grid min-h-dvh grid-rows-[auto_1fr_auto] bg-[#F5F5F5] text-sm sm:text-base">
       <Header />
       <Main>
         <Outlet />
