@@ -11,10 +11,6 @@ export default function AppsPage() {
   const [search, setSearch] = useState("");
   const [totalData, setTotalData] = useState(data.length);
 
-  if (totalData === 0) {
-    return <NoAppError />;
-  }
-
   return (
     <section className="py-14">
       <Container style="space-y-10">

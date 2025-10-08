@@ -3,6 +3,7 @@ import { Link } from "react-router";
 import downloadIcon from "../assets/icon-downloads.png";
 import ratingsIcon from "../assets/icon-ratings.png";
 import { formatLargeNumber } from "../utils/utils";
+import LinkButton from "./LinkButton";
 
 export default function AppsContainer({
   data,
@@ -22,8 +23,22 @@ export default function AppsContainer({
     [fileterData.length, onTotalData],
   );
 
+  if (fileterData.length === 0) {
+    return (
+      <div className="flex flex-col items-center justify-center gap-4">
+        <p className="text-heading text-4xl font-bold">No Apps Found</p>
+        <LinkButton
+          styles="bg-gradient-primary text-center text-white max-w-fit mx-auto"
+          to="/apps"
+        >
+          Show All
+        </LinkButton>
+      </div>
+    );
+  }
+
   return (
-    <div className="grid grid-cols-1 gap-3 min-[38.125rem]:grid-cols-[repeat(auto-fit,minmax(17.5rem,1fr))]">
+    <div className="xs:grid-cols-2 grid grid-cols-1 gap-3 md:grid-cols-3 lg:grid-cols-4">
       {fileterData.map((app) => (
         <AppCard key={app.id} app={app} />
       ))}
