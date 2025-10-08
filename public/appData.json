@@ -1,0 +1,363 @@
+[
+  {
+    "image": "https://i.ibb.co.com/G3THQd4Q/Whats-App-header-1024x500.jpg",
+    "title": "WhatsApp - Secure Messaging",
+    "companyName": "WhatsApp LLC",
+    "id": 1,
+    "description": "WhatsApp offers secure, reliable messaging and calling worldwide. End-to-end encryption ensures privacy for chats and calls. With over 2 billion users, it supports group chats, media sharing, and business tools. Features like status updates and disappearing messages enhance communication. In 2025, cross-platform syncing and minimal design make it ideal for personal and professional use, connecting teams and families effortlessly.",
+    "size": 35,
+    "reviews": 38000000,
+    "ratingAvg": 4.2,
+    "downloads": 5000000000,
+    "ratings": [
+      { "name": "1 star", "count": 2200000 },
+      { "name": "2 star", "count": 1300000 },
+      { "name": "3 star", "count": 3200000 },
+      { "name": "4 star", "count": 7500000 },
+      { "name": "5 star", "count": 26000000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/nNmPx1ZV/20240829053151-Gmail.jpg",
+    "title": "Gmail - Email Management",
+    "companyName": "Google LLC",
+    "id": 2,
+    "description": "Gmail provides secure email with 15GB storage, spam filtering, and smart replies. Organize emails with labels and search effortlessly. Integrates with Google Calendar and Drive for seamless productivity. Confidential mode protects sensitive info. In 2025, AI-powered summaries streamline email handling, making it a top choice for personal and professional communication.",
+    "size": 45,
+    "reviews": 30000000,
+    "ratingAvg": 4.2,
+    "downloads": 10000000000,
+    "ratings": [
+      { "name": "1 star", "count": 2000000 },
+      { "name": "2 star", "count": 1300000 },
+      { "name": "3 star", "count": 3000000 },
+      { "name": "4 star", "count": 7000000 },
+      { "name": "5 star", "count": 19000000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/1tZ1sM38/maxresdefault.jpg",
+    "title": "Google Maps - Navigation",
+    "companyName": "Google LLC",
+    "id": 3,
+    "description": "Google Maps offers navigation, street view, and real-time traffic updates. Find businesses, book tables, and share locations. Offline maps and eco-friendly routes enhance usability. In 2025, AR walking directions improve accuracy, making it essential for travel, commuting, and location-based planning.",
+    "size": 70,
+    "reviews": 25000000,
+    "ratingAvg": 4.3,
+    "downloads": 10000000000,
+    "ratings": [
+      { "name": "1 star", "count": 1500000 },
+      { "name": "2 star", "count": 1000000 },
+      { "name": "3 star", "count": 2500000 },
+      { "name": "4 star", "count": 6000000 },
+      { "name": "5 star", "count": 15000000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/V04MPv0n/openai-chatgpt-surge-deepseek.jpg",
+    "title": "ChatGPT - AI Conversation",
+    "companyName": "OpenAI",
+    "id": 4,
+    "description": "ChatGPT, powered by GPT models, answers queries, generates ideas, and assists with tasks like coding. Voice mode and image analysis add versatility. Custom GPTs personalize experiences. In 2025, app integrations boost productivity, making it ideal for brainstorming, research, and automation. Free with limits or subscribe for more.",
+    "size": 40,
+    "reviews": 5000000,
+    "ratingAvg": 4.5,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 150000 },
+      { "name": "2 star", "count": 100000 },
+      { "name": "3 star", "count": 250000 },
+      { "name": "4 star", "count": 800000 },
+      { "name": "5 star", "count": 3800000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/sd0wx15B/2.jpg",
+    "title": "CapCut - Video Editing",
+    "companyName": "CapCut",
+    "id": 5,
+    "description": "CapCut offers professional video editing with music, effects, and transitions. Auto captions and templates simplify creation. Export high-quality videos for social media or work. Free with pro upgrades, its AI tools in 2025 streamline editing, empowering creators to produce stunning content efficiently.",
+    "size": 55,
+    "reviews": 4000000,
+    "ratingAvg": 4.6,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 100000 },
+      { "name": "2 star", "count": 80000 },
+      { "name": "3 star", "count": 200000 },
+      { "name": "4 star", "count": 700000 },
+      { "name": "5 star", "count": 3000000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/rfddcTZb/duolingo-banner.png",
+    "title": "Duolingo - Language Learning",
+    "companyName": "Duolingo",
+    "id": 6,
+    "description": "Duolingo makes language learning fun with gamified lessons. Bite-sized exercises teach vocabulary, grammar, and pronunciation. Over 40 languages, including Klingon, are available. Track progress with streaks and leagues. In 2025, adaptive learning personalizes lessons. Free with ads or ad-free with subscription, it’s ideal for professional and personal growth.",
+    "size": 30,
+    "reviews": 7000000,
+    "ratingAvg": 4.6,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 200000 },
+      { "name": "2 star", "count": 150000 },
+      { "name": "3 star", "count": 400000 },
+      { "name": "4 star", "count": 1500000 },
+      { "name": "5 star", "count": 5200000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/zWQcGyYG/trello.webp",
+    "title": "Trello - Project Management",
+    "companyName": "Atlassian",
+    "id": 7,
+    "description": "Trello organizes tasks with boards, lists, and cards. Collaborate with teams, assign tasks, and set deadlines. Integrates with apps like Slack and Google Drive. Customizable workflows suit any project. In 2025, automation features streamline repetitive tasks, boosting team productivity and organization.",
+    "size": 25,
+    "reviews": 2000000,
+    "ratingAvg": 4.4,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 80000 },
+      { "name": "2 star", "count": 60000 },
+      { "name": "3 star", "count": 150000 },
+      { "name": "4 star", "count": 500000 },
+      { "name": "5 star", "count": 1300000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/mrjq8szQ/mb-slack-01.jpg",
+    "title": "Slack - Team Collaboration",
+    "companyName": "Slack Technologies",
+    "id": 8,
+    "description": "Slack streamlines team communication with channels, direct messages, and file sharing. Integrates with tools like Zoom and Trello for seamless workflows. Voice and video calls support remote work. In 2025, AI-driven search improves efficiency, making it essential for professional collaboration and project coordination.",
+    "size": 50,
+    "reviews": 2500000,
+    "ratingAvg": 4.3,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 100000 },
+      { "name": "2 star", "count": 75000 },
+      { "name": "3 star", "count": 200000 },
+      { "name": "4 star", "count": 600000 },
+      { "name": "5 star", "count": 1525000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/4Zd4H1JR/1-ICLq-I1-Vv-JH6e4-L5v64-Sx-RQ.png",
+    "title": "Notion - All-in-One Workspace",
+    "companyName": "Notion Labs, Inc.",
+    "id": 9,
+    "description": "Notion combines notes, tasks, databases, and wikis in one app. Create customizable workspaces for personal or team projects. Sync across devices and collaborate in real-time. In 2025, AI templates enhance organization, making it a powerful tool for planning, writing, and project management.",
+    "size": 35,
+    "reviews": 1500000,
+    "ratingAvg": 4.5,
+    "downloads": 50000000,
+    "ratings": [
+      { "name": "1 star", "count": 50000 },
+      { "name": "2 star", "count": 40000 },
+      { "name": "3 star", "count": 100000 },
+      { "name": "4 star", "count": 350000 },
+      { "name": "5 star", "count": 1000000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/qLcNrcnC/03a769fa53b63bd9af68d57b972dae3bcf0d3446e062349f75f9e52f5d32747d663bf35f685560c22b1855f0e2597f84e494.png",
+    "title": "Todoist - Task Management",
+    "companyName": "Doist Inc.",
+    "id": 10,
+    "description": "Todoist organizes tasks with due dates, priorities, and projects. Sync across devices and integrate with calendars. Collaborative features support team productivity. In 2025, AI suggestions optimize task planning, making it ideal for personal and professional to-do lists and goal tracking.",
+    "size": 20,
+    "reviews": 1000000,
+    "ratingAvg": 4.5,
+    "downloads": 50000000,
+    "ratings": [
+      { "name": "1 star", "count": 30000 },
+      { "name": "2 star", "count": 20000 },
+      { "name": "3 star", "count": 80000 },
+      { "name": "4 star", "count": 250000 },
+      { "name": "5 star", "count": 650000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/Y7LjDmh7/images-q-tbn-ANd9-Gc-Sl-Ba-Su-NAUp-NSJFEcj-Y0j-S4x-55-FTOJx-Low5-Q-s.png",
+    "title": "Microsoft Teams - Remote Collaboration",
+    "companyName": "Microsoft Corporation",
+    "id": 11,
+    "description": "Microsoft Teams enables team meetings, chats, and file sharing. Integrates with Office 365 for document collaboration. Video calls and webinars support remote work. In 2025, AI transcription enhances meetings, making it a go-to for businesses and remote teams.",
+    "size": 60,
+    "reviews": 3000000,
+    "ratingAvg": 4.2,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 150000 },
+      { "name": "2 star", "count": 100000 },
+      { "name": "3 star", "count": 250000 },
+      { "name": "4 star", "count": 700000 },
+      { "name": "5 star", "count": 1800000 }
+    ]
+  },
+
+  {
+    "image": "https://i.ibb.co.com/1fFpQNC0/17-1.png",
+    "title": "Google Drive - Cloud Storage",
+    "companyName": "Google LLC",
+    "id": 12,
+    "description": "Google Drive stores files securely with 15GB free space. Share documents, collaborate in real-time, and access anywhere. Integrates with Docs, Sheets, and Slides. In 2025, enhanced search improves file management, making it essential for personal and team productivity.",
+    "size": 40,
+    "reviews": 2000000,
+    "ratingAvg": 4.3,
+    "downloads": 5000000000,
+    "ratings": [
+      { "name": "1 star", "count": 100000 },
+      { "name": "2 star", "count": 80000 },
+      { "name": "3 star", "count": 200000 },
+      { "name": "4 star", "count": 500000 },
+      { "name": "5 star", "count": 1320000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/YFtD7fbv/Evernote.jpg",
+    "title": "Evernote - Note Taking",
+    "companyName": "Evernote Corporation",
+    "id": 13,
+    "description": "Evernote organizes notes, tasks, and clippings. Sync across devices and search handwritten or typed notes. Collaborate on projects and set reminders. In 2025, AI tagging improves organization, making it perfect for capturing ideas and managing workflows.",
+    "size": 45,
+    "reviews": 1800000,
+    "ratingAvg": 4.1,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 90000 },
+      { "name": "2 star", "count": 70000 },
+      { "name": "3 star", "count": 180000 },
+      { "name": "4 star", "count": 450000 },
+      { "name": "5 star", "count": 1103000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/yBSqCHrD/Asana-Cover-1.webp",
+    "title": "Asana - Task Tracking",
+    "companyName": "Asana, Inc.",
+    "id": 14,
+    "description": "Asana helps teams manage tasks, projects, and deadlines. Assign work, track progress, and integrate with tools like Slack. Customizable views suit any workflow. In 2025, automation features streamline updates, boosting team efficiency and project clarity.",
+    "size": 30,
+    "reviews": 800000,
+    "ratingAvg": 4.4,
+    "downloads": 50000000,
+    "ratings": [
+      { "name": "1 star", "count": 30000 },
+      { "name": "2 star", "count": 20000 },
+      { "name": "3 star", "count": 60000 },
+      { "name": "4 star", "count": 200000 },
+      { "name": "5 star", "count": 490000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/Ng6XjCCB/blog-Thumbnail-zoom.jpg",
+    "title": "Zoom - Video Conferencing",
+    "companyName": "Zoom Video Communications",
+    "id": 15,
+    "description": "Zoom offers video meetings, webinars, and chats. Host or join calls with HD quality and screen sharing. Integrates with calendars and Slack. In 2025, AI transcription and virtual backgrounds enhance remote work, making it a staple for professional communication.",
+    "size": 50,
+    "reviews": 3500000,
+    "ratingAvg": 4.2,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 200000 },
+      { "name": "2 star", "count": 150000 },
+      { "name": "3 star", "count": 300000 },
+      { "name": "4 star", "count": 800000 },
+      { "name": "5 star", "count": 2050000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/x0bXgyB/Canva-Business-Model.png",
+    "title": "Canva - Graphic Design",
+    "companyName": "Canva",
+    "id": 16,
+    "description": "Canva simplifies graphic design with templates for presentations, posters, and social media. Collaborate in real-time and access millions of images. In 2025, AI tools enhance design suggestions, making it ideal for creating professional visuals quickly for work or personal projects.",
+    "size": 35,
+    "reviews": 2500000,
+    "ratingAvg": 4.7,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 60000 },
+      { "name": "2 star", "count": 40000 },
+      { "name": "3 star", "count": 100000 },
+      { "name": "4 star", "count": 600000 },
+      { "name": "5 star", "count": 1700000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/5hLDP4dp/10-Google-Calendar-Tips-to-increase-your-productivity-01.png",
+    "title": "Google Calendar - Time Management",
+    "companyName": "Google LLC",
+    "id": 17,
+    "description": "Google Calendar organizes schedules with events, reminders, and shared calendars. Sync with Gmail and Drive for seamless planning. In 2025, AI scheduling suggestions optimize time management, making it perfect for personal and professional organization.",
+    "size": 25,
+    "reviews": 2000000,
+    "ratingAvg": 4.3,
+    "downloads": 5000000000,
+    "ratings": [
+      { "name": "1 star", "count": 100000 },
+      { "name": "2 star", "count": 80000 },
+      { "name": "3 star", "count": 200000 },
+      { "name": "4 star", "count": 500000 },
+      { "name": "5 star", "count": 1320000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/4wg4xQhs/01taqeyg9e8ob0fgzoxbbab-7-hero-image-gallery-fit-lim-size-1050x591-v1569473183.jpg",
+    "title": "Microsoft OneNote - Digital Notebook",
+    "companyName": "Microsoft Corporation",
+    "id": 18,
+    "description": "OneNote captures notes, drawings, and ideas. Sync across devices and collaborate with teams. Searchable notes and integration with Office 365 boost productivity. In 2025, voice input enhancements make it ideal for meetings and brainstorming sessions.",
+    "size": 40,
+    "reviews": 1500000,
+    "ratingAvg": 4.4,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 60000 },
+      { "name": "2 star", "count": 40000 },
+      { "name": "3 star", "count": 100000 },
+      { "name": "4 star", "count": 350000 },
+      { "name": "5 star", "count": 950000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/tpJKchdC/dropbox-featured.png",
+    "title": "Dropbox - File Sharing",
+    "companyName": "Dropbox, Inc.",
+    "id": 19,
+    "description": "Dropbox stores and shares files securely in the cloud. Collaborate on documents and access offline. Integrates with tools like Zoom and Slack. In 2025, enhanced encryption ensures data safety, making it a reliable choice for team and personal file management.",
+    "size": 45,
+    "reviews": 1800000,
+    "ratingAvg": 4.2,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 90000 },
+      { "name": "2 star", "count": 70000 },
+      { "name": "3 star", "count": 180000 },
+      { "name": "4 star", "count": 450000 },
+      { "name": "5 star", "count": 1103000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/hxnpjzXP/sddefault.jpg",
+    "title": "Adobe Scan - Document Scanning",
+    "companyName": "Adobe Inc.",
+    "id": 20,
+    "description": "Adobe Scan turns your phone into a scanner. Digitize documents, receipts, and notes with OCR for searchable PDFs. Share and integrate with Adobe Acrobat. In 2025, AI enhancements improve text recognition, making it essential for digitizing and organizing paperwork.",
+    "size": 30,
+    "reviews": 1200000,
+    "ratingAvg": 4.6,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 40000 },
+      { "name": "2 star", "count": 30000 },
+      { "name": "3 star", "count": 80000 },
+      { "name": "4 star", "count": 300000 },
+      { "name": "5 star", "count": 790000 }
+    ]
+  }
+]
