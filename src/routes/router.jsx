@@ -5,6 +5,7 @@ import AppsPage from "../pages/AppsPage";
 import ErrorPage from "../pages/ErrorPage";
 import HomePage from "../pages/HomePage";
 import InstallationPage from "../pages/InstallationPage";
+import NoAppError from "../pages/NoAppError";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,7 @@ const router = createBrowserRouter([
         path: "appDetails/:id",
         Component: AppDetailsPage,
         loader: async () => fetch("../appData.json"),
+        errorElement: <NoAppError />,
       },
     ],
   },

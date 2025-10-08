@@ -3,12 +3,15 @@ import { useLoaderData, useParams } from "react-router";
 import AppOverview from "../components/AppDetailsPage/AppOverview";
 import RatingStateChart from "../components/AppDetailsPage/RatingStateChart";
 import Container from "../components/Container";
+import NoAppError from "./NoAppError";
 
 export default function AppDetailsPage() {
   const { id } = useParams();
   const data = useLoaderData();
 
   const app = data.find((app) => app.id === +id);
+  if (!app) throw new Error("OPPS!! APP NOT FOUND");
+
   const {
     image,
     title,
