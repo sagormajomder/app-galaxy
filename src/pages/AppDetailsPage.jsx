@@ -23,7 +23,6 @@ export default function AppDetailsPage() {
 
   return (
     <Container style="space-y-10 py-6">
-      {/* App Overview Section */}
       <AppOverview
         id={+id}
         image={image}
@@ -34,8 +33,9 @@ export default function AppDetailsPage() {
         reviews={reviews}
         size={size}
       />
-      {/* Reviews Chart Section */}
+
       <RatingStateChart ratings={ratings} />
+
       {/* Description section */}
       <section className="pb-10">
         <h4 className="heading-4 mb-2">Description</h4>

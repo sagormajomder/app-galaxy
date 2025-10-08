@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link } from "react-router";
 import downloadIcon from "../assets/icon-downloads.png";
 import ratingsIcon from "../assets/icon-ratings.png";
@@ -14,7 +15,12 @@ export default function AppsContainer({
       .includes(search.replace(/\s+/g, " ").trim().toLowerCase()),
   );
 
-  onTotalData(fileterData.length);
+  useEffect(
+    function () {
+      onTotalData(fileterData.length);
+    },
+    [fileterData.length, onTotalData],
+  );
 
   return (
     <div className="grid grid-cols-1 gap-3 min-[38.125rem]:grid-cols-[repeat(auto-fit,minmax(17.5rem,1fr))]">
