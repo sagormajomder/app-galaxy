@@ -41,7 +41,7 @@
   @apply text-heading mb-1 text-2xl font-bold md:text-3xl;
 }
 @utility heading-4 {
-  @apply text-heading text-2xl font-semibold;
+  @apply text-heading text-xl font-semibold md:text-2xl;
 }
 @utility heading-5 {
   @apply text-heading text-lg font-medium;
