@@ -18,7 +18,7 @@ function AppCard({ app }) {
 
   return (
     <Link
-      to={`appDetails/${id}`}
+      to={`/appDetails/${id}`}
       className="flex flex-col justify-between gap-4 rounded-md bg-white p-4 transition duration-300 hover:scale-105 hover:shadow-xl"
     >
       <figure className="overflow-hidden rounded-lg max-[38.125rem]:w-full">
