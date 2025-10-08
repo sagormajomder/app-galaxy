@@ -4,40 +4,6 @@ import AppOverview from "../components/AppDetailsPage/AppOverview";
 import RatingStateChart from "../components/AppDetailsPage/RatingStateChart";
 import Container from "../components/Container";
 
-// {
-//     "image": "https://i.ibb.co.com/nNmPx1ZV/20240829053151-Gmail.jpg",
-//     "title": "Gmail - Email Management",
-//     "companyName": "Google LLC",
-//     "id": 2,
-//     "description": "Gmail provides secure email with 15GB storage, spam filtering, and smart replies. Organize emails with labels and search effortlessly. Integrates with Google Calendar and Drive for seamless productivity. Confidential mode protects sensitive info. In 2025, AI-powered summaries streamline email handling, making it a top choice for personal and professional communication.",
-//     "size": 45,
-//     "reviews": 30000000,
-//     "ratingAvg": 4.2,
-//     "downloads": 10000000000,
-//     "ratings": [
-//         {
-//             "name": "1 star",
-//             "count": 2000000
-//         },
-//         {
-//             "name": "2 star",
-//             "count": 1300000
-//         },
-//         {
-//             "name": "3 star",
-//             "count": 3000000
-//         },
-//         {
-//             "name": "4 star",
-//             "count": 7000000
-//         },
-//         {
-//             "name": "5 star",
-//             "count": 19000000
-//         }
-//     ]
-// }
-
 export default function AppDetailsPage() {
   const { id } = useParams();
   const data = useLoaderData();
@@ -46,6 +12,7 @@ export default function AppDetailsPage() {
   const {
     image,
     title,
+    description,
     companyName,
     downloads,
     ratingAvg,
@@ -69,6 +36,11 @@ export default function AppDetailsPage() {
       />
       {/* Reviews Chart Section */}
       <RatingStateChart ratings={ratings} />
+      {/* Description section */}
+      <section className="pb-10">
+        <h4 className="heading-4 mb-2">Description</h4>
+        <p>{description}</p>
+      </section>
     </Container>
   );
 }

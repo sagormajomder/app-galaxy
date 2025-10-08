@@ -14,7 +14,7 @@ export default function RatingStateChart({ ratings }) {
   });
 
   return (
-    <section className="pb-10">
+    <section className="border-b border-gray-300 pb-6">
       <h4 className="heading-4">Ratings</h4>
 
       <div className="h-[18.75rem] md:h-[25rem] lg:h-[31.25rem]">
