@@ -35,7 +35,7 @@
 }
 
 @utility heading-2 {
-  @apply text-heading text-2xl font-bold sm:text-4xl;
+  @apply text-heading mb-4 text-2xl font-bold sm:text-4xl;
 }
 @utility heading-3 {
   @apply text-heading text-3xl font-bold;
@@ -44,5 +44,5 @@
   @apply text-heading text-2xl font-semibold;
 }
 @utility heading-5 {
-  @apply text-heading text-xl font-medium;
+  @apply text-heading text-lg font-medium;
 }

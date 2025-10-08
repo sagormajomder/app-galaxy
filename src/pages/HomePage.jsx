@@ -1,11 +1,17 @@
-import { Link } from "react-router";
+import { useLoaderData } from "react-router";
 import appStoreIcon from "../assets/app-store.png";
 import googlePlayIcon from "../assets/google-play.png";
 import heroImage from "../assets/hero.png";
+
+import AppsContainer from "../components/AppsContainer";
 import Container from "../components/Container";
+import SectionTitle from "../components/SectionTitle";
 import LinkButton from "./../components/LinkButton";
 
 export default function HomePage() {
+  const data = useLoaderData();
+  const trendingApps = data.slice(0, 8);
+
   return (
     <>
       <Container>
@@ -82,6 +88,23 @@ export default function HomePage() {
             <p className="opacity-80">31 more will Launch</p>
           </div>
         </div>
+      </section>
+      {/* Trendign Apps Section */}
+      <section className="py-14">
+        <Container style="space-y-10">
+          <SectionTitle
+            title="Trending Apps"
+            desc="Explore All Trending Apps on the Market developed by us"
+          />
+          {/* Trending Apps */}
+          <AppsContainer data={trendingApps} />
+          <LinkButton
+            styles="bg-gradient-primary text-center text-white max-w-fit mx-auto"
+            to="/apps"
+          >
+            Show All
+          </LinkButton>
+        </Container>
       </section>
     </>
   );
