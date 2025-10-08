@@ -5,7 +5,7 @@ import { formatLargeNumber } from "../utils/utils";
 
 export default function AppsContainer({ data }) {
   return (
-    <div className="grid grid-cols-[repeat(auto-fit,minmax(17.5rem,1fr))] gap-3">
+    <div className="grid grid-cols-1 gap-3 min-[38.125rem]:grid-cols-[repeat(auto-fit,minmax(17.5rem,1fr))]">
       {data.map((app) => (
         <AppCard key={app.id} app={app} />
       ))}
@@ -21,8 +21,8 @@ function AppCard({ app }) {
       to={`appDetails/${id}`}
       className="flex flex-col justify-between gap-4 rounded-md bg-white p-4 transition duration-300 hover:scale-105 hover:shadow-xl"
     >
-      <figure className="overflow-hidden rounded-lg">
-        <img className="h-48 object-cover" src={image} alt={title} />
+      <figure className="overflow-hidden rounded-lg max-[38.125rem]:w-full">
+        <img className="h-48 w-full object-cover" src={image} alt={title} />
       </figure>
       <h5 className="heading-5">{title}</h5>
       <div className="flex items-center justify-between">
