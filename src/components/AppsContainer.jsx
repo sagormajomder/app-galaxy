@@ -3,7 +3,6 @@ import { Link } from "react-router";
 import downloadIcon from "../assets/icon-downloads.png";
 import ratingsIcon from "../assets/icon-ratings.png";
 import { formatLargeNumber } from "../utils/utils";
-import Loader from "./Loader";
 import NotFoundApps from "./NotFoundApps";
 
 export default function AppsContainer({
@@ -30,7 +29,7 @@ export default function AppsContainer({
             .includes(search.replace(/\s+/g, " ").trim().toLowerCase()),
         );
         setIsLoading(false);
-      }, 800);
+      }, 600);
     },
     [data, search],
   );
@@ -42,9 +41,15 @@ export default function AppsContainer({
     [filterData.length, onTotalData],
   );
 
-  if (isLoading) {
-    return <Loader />;
+  // Search Loading
+  if (isLoading && search) {
+    return (
+      <div className="flex justify-center py-10">
+        <p className="loading loading-spinner text-accent loading-xl"></p>
+      </div>
+    );
   }
+
   if (filterData.length === 0) {
     return <NotFoundApps message="No Apps Found" buttonText="Show All" />;
   }

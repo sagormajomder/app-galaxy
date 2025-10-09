@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router";
+import Loader from "../components/Loader";
 import RootLayout from "../layouts/RootLayout";
 import AppDetailsPage from "../pages/AppDetailsPage";
 import AppsPage from "../pages/AppsPage";
@@ -12,6 +13,7 @@ const router = createBrowserRouter([
     path: "/",
     Component: RootLayout,
     errorElement: <ErrorPage />,
+    hydrateFallbackElement: <Loader />,
     children: [
       {
         index: true,
