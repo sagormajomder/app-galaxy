@@ -1,16 +1,60 @@
-# React + Vite
+# AppGalaxy - Your universe of ready-made productivity apps
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+AppGalaxy showcases a curated collection of productivity apps developed by our expert team. Users can install ready-made solutions or hire developers to create custom applications tailored to their needs.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Tools & Technology](#tools--technology-used)
+- [Run it Locally](#run-it-locally)
+- [Necessary Links](#necessary-links)
+- [Connect With Me](#connect-with-me)
 
-## React Compiler
+## Tools & Technology Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Technology
 
-## Expanding the ESLint configuration
+- Javascript
+- React (v19)
+- React-router(v7)
+- Tailwindcss (v4)
+- Recharts (v3)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Tools
+
+- Vite (v7)
+- DaisyUI (v5)
+- react-toastify (v11)
+- Prettier
+- EsLint
+
+## Run it Locally
+
+Please follow the below instructions to run this project in your machine:
+
+1. Clone this repository
+
+   ```sh
+   git clone https://github.com/sagormajomder/app-galaxy.git
+   ```
+
+2. Open the directory "app-galaxy" into visual studio code
+3. Open Terminal and run `npm i` to install all dependencies
+4. Run `npm run dev` to run the project into browser
+
+The project will be available on http://localhost:5173/ by default.
+
+## Necessary Links
+
+- Design [Figma file](https://www.figma.com/design/9KO4OzmPNItDBcJvm8xK3r/Hero-IO?node-id=2-443&t=zFBk4eNui0zHoYxU-1)
+
+## Connect with Me
+
+✨ Let's connect on different platforms! Feel free to reach out.
+
+🐦 **Twitter:** [@sagormajomder](https://twitter.com/sagormajomder)
+
+🐙 **GitHub:** [@sagormajomder](https://github.com/sagormajomder)
+
+📘 **Facebook:** [@sagormajomder](https://facebook.com/sagormajomder)
+
+🔗 **LinkedIn:** [@sagormajomder](https://www.linkedin.com/in/sagormajomder/)
