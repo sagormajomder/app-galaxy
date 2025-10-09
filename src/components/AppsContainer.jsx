@@ -51,7 +51,7 @@ export default function AppsContainer({
   }
 
   if (filterData.length === 0) {
-    return <NotFoundApps message="No Apps Found" buttonText="Show All" />;
+    return <NotFoundApps message="No App Found" buttonText="Show All" />;
   }
 
   return (
