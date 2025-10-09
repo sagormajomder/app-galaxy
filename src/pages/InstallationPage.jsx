@@ -5,6 +5,7 @@ import Container from "../components/Container";
 import SectionTitle from "../components/SectionTitle";
 import { localGetInstalledApp, localUpdateInstalledApp } from "../utils/utils";
 
+import { toast } from "react-toastify";
 import InstalledAppsContainer from "../components/InstalledAppsContainer";
 import NotFoundApps from "../components/NotFoundApps";
 
@@ -34,6 +35,11 @@ export default function InstallationPage() {
     );
     setInstalledApp(updatedInstalledApp);
     localUpdateInstalledApp(updatedInstalledApp);
+    // Toast Message
+    const appName = sortedInstalledApp
+      .find((app) => app.id === id)
+      .title.split("-")[0];
+    toast.success(`${appName} is successfully uninstall!`);
   }
 
   return (
