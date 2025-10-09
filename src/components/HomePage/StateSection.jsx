@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function StateSection() {
   return (
     <section className="bg-gradient-primary space-y-10 py-14 text-center text-white">

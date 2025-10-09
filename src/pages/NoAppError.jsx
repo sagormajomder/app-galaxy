@@ -1,4 +1,3 @@
-import React from "react";
 import { useRouteError } from "react-router";
 import noAppErroImage from "../assets/App-Error.png";
 import Container from "../components/Container";

@@ -4,7 +4,6 @@ import AppsContainer from "../components/AppsContainer";
 import AppsHeading from "../components/AppsHeading";
 import Container from "../components/Container";
 import SectionTitle from "./../components/SectionTitle";
-import NoAppError from "./NoAppError";
 
 export default function AppsPage() {
   const data = useLoaderData();

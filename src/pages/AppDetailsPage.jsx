@@ -3,7 +3,6 @@ import { useLoaderData, useParams } from "react-router";
 import AppOverview from "../components/AppDetailsPage/AppOverview";
 import RatingStateChart from "../components/AppDetailsPage/RatingStateChart";
 import Container from "../components/Container";
-import NoAppError from "./NoAppError";
 
 export default function AppDetailsPage() {
   const { id } = useParams();

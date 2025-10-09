@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function SectionTitle({ title, desc }) {
   return (
     <div className="text-center">

@@ -1,4 +1,3 @@
-import React from "react";
 import AppsContainer from "../AppsContainer";
 import Container from "../Container";
 import LinkButton from "../LinkButton";
