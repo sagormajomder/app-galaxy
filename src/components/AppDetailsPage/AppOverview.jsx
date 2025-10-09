@@ -6,7 +6,7 @@ import reviewIcon from "../../assets/icon-review.png";
 import {
   formatLargeNumber,
   localGetInstalledApp,
-  localSetInsalledApp,
+  localSetInstalledApp,
 } from "../../utils/utils";
 
 export default function AppOverview({
@@ -26,8 +26,8 @@ export default function AppOverview({
 
   function handleInstall() {
     setIsInstalled(true);
+    localSetInstalledApp(id);
     toast.success(`Successfully installed!`);
-    localSetInsalledApp(id);
   }
   return (
     <section className="flex flex-col gap-8 border-b border-gray-300 py-10 sm:flex-row">

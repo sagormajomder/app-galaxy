@@ -3,8 +3,8 @@ import { Link } from "react-router";
 import downloadIcon from "../assets/icon-downloads.png";
 import ratingsIcon from "../assets/icon-ratings.png";
 import { formatLargeNumber } from "../utils/utils";
-import LinkButton from "./LinkButton";
 import Loader from "./Loader";
+import NotFoundApps from "./NotFoundApps";
 
 export default function AppsContainer({
   data,
@@ -46,17 +46,7 @@ export default function AppsContainer({
     return <Loader />;
   }
   if (filterData.length === 0) {
-    return (
-      <div className="flex flex-col items-center justify-center gap-4">
-        <p className="text-heading text-4xl font-bold">No Apps Found</p>
-        <LinkButton
-          styles="bg-gradient-primary text-center text-white max-w-fit mx-auto"
-          to="/apps"
-        >
-          Show All
-        </LinkButton>
-      </div>
-    );
+    return <NotFoundApps message="No Apps Found" buttonText="Show All" />;
   }
 
   return (

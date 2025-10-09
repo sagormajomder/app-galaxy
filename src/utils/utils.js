@@ -15,11 +15,15 @@ export function localGetInstalledApp() {
 }
 
 // Save installed App into localstorage
-export function localSetInsalledApp(id) {
+export function localSetInstalledApp(id) {
   const installedApps = localGetInstalledApp();
-
-  if (installedApps.length === 0) {
-    localStorage.setItem("installedApp", JSON.stringify([id]));
-  }
   localStorage.setItem("installedApp", JSON.stringify([...installedApps, id]));
+}
+
+// update installed App into localstorage
+export function localUpdateInstalledApp(updatedInstalledApp) {
+  localStorage.setItem(
+    "installedApp",
+    JSON.stringify(updatedInstalledApp.map((app) => app.id)),
+  );
 }

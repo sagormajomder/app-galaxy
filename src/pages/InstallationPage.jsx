@@ -3,9 +3,10 @@ import { useLoaderData } from "react-router";
 import AppsHeading from "../components/AppsHeading";
 import Container from "../components/Container";
 import SectionTitle from "../components/SectionTitle";
-import { localGetInstalledApp } from "../utils/utils";
+import { localGetInstalledApp, localUpdateInstalledApp } from "../utils/utils";
 
 import InstalledAppsContainer from "../components/InstalledAppsContainer";
+import NotFoundApps from "../components/NotFoundApps";
 
 export default function InstallationPage() {
   const data = useLoaderData();
@@ -28,16 +29,11 @@ export default function InstallationPage() {
   }
 
   function handleRemoveApp(id) {
-    console.log(id);
-
     const updatedInstalledApp = sortedInstalledApp.filter(
       (app) => app.id !== id,
     );
     setInstalledApp(updatedInstalledApp);
-    localStorage.setItem(
-      "installedApp",
-      JSON.stringify(updatedInstalledApp.map((app) => app.id)),
-    );
+    localUpdateInstalledApp(updatedInstalledApp);
   }
 
   return (
@@ -52,10 +48,17 @@ export default function InstallationPage() {
           sortBy={sortBy}
           onSortBy={setSortBy}
         />
-        <InstalledAppsContainer
-          apps={sortedInstalledApp}
-          onRemoveApp={handleRemoveApp}
-        />
+        {sortedInstalledApp.length === 0 ? (
+          <NotFoundApps
+            message="No Installed Apps Found"
+            buttonText="Explore Apps"
+          />
+        ) : (
+          <InstalledAppsContainer
+            apps={sortedInstalledApp}
+            onRemoveApp={handleRemoveApp}
+          />
+        )}
       </Container>
     </section>
   );
