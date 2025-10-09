@@ -26,6 +26,7 @@ const router = createBrowserRouter([
       {
         path: "installation",
         Component: InstallationPage,
+        loader: async () => fetch("../appData.json"),
       },
       {
         path: "appDetails/:id",
