@@ -1,5 +1,5 @@
 # AppGalaxy - Your universe of ready-made productivity apps
-
+![](./src/assets/project-screenshot.png)
 AppGalaxy showcases a curated collection of productivity apps developed by our expert team. Users can install ready-made solutions or hire developers to create custom applications tailored to their needs.
 
 ## Table of Contents
